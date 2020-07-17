@@ -29,6 +29,8 @@ class DashboardFragment : Fragment() {
         dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = "Good Morning Ilham!\nHow do you feel right now?"
             btnNext.setOnClickListener {
+                val intent = Intent(activity, IntroActivity::class.java)
+                startActivity(intent)
             }
         })
         return root
