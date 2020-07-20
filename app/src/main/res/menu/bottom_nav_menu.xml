@@ -7,7 +7,7 @@
         android:title="" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_myday"
         android:icon="@drawable/ic_my_day_blue"
         android:title="" />
 

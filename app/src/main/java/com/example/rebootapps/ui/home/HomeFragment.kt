@@ -21,10 +21,10 @@ class HomeFragment : Fragment() {
     ): View? {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_myday, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
+        val root = inflater.inflate(R.layout.fragment_journal, container, false)
+        val textView: TextView = root.findViewById(R.id.text_dashboard)
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = "Good Morning Ilham !\nHow do you feel right now ?"
+            textView.text = it
         })
         return root
     }

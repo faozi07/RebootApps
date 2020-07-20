@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.IntroActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".ui.IntroActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
@@ -20,6 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CardSlide">
+            <intent-filter>
+                <action android:name="android.intent.action." />
+
+                <category android:name="android.intent.category." />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BucketList"/>
     </application>
 
 </manifest>
